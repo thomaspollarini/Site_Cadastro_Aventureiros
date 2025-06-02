@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Aventureiro</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="parchment">
+      <section class="guild">
+        <table class="guild__table">
+          <caption>
+            Lista de Aventureiros
+          </caption>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Exp</th>
+            <th scope="col">Rank</th>
+          </tr>
+        </table>
+      </section>
+      <section class="register">
+        <h2>Registrar novo membro na Guilda:</h2>
+        <input type="text" placeholder="Nome do Aventureiro" class="register__name" />
+        <input type="number" placeholder="Experiência" min="0" class="register__exp"/>
+        <button class="register__submit">Registrar</button>
+      </section>
+    </main>
+
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>
