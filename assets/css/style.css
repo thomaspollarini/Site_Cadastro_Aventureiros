@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=MedievalSharp&display=swap');
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MedievalSharp", cursive;
+}
+
+/* tavern */
+
+body {
+  background: black url(../images/tavern.png) no-repeat center center fixed;
+  background-size: cover;
+  width: 98svw;
+  height: 98vh;
+
+  position: relative;
+}
+
+/* parchment */
+
+.parchment {
+  width: 60svw;
+  max-width: 800px;
+  max-height: 98svh;
+  aspect-ratio: 2 / 3;
+
+  padding: 80px;
+  background: url(../images/parchment.png) no-repeat center center fixed;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* guild */
+
+.guild__table {
+    width: 100%;
+
+}
+
+.guild__table caption {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.guild__table th {
+    font-size: 1.25rem;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.guild__table td {
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.guild__table .signature {
+    font-family: "Lavishly Yours", cursive;
+    font-size: 1.75rem;
+}
+
+/* register */
+.register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.register h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.register input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 2px solid rgb(75, 53, 20);
+    border-radius: 50px;
+    background-color: cornsilk;
+}
+
+.register button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    border-color: rgb(219, 176, 111); 
+    border-radius: 50px;
+    background-color: rgb(204, 136, 34);
+    color: cornsilk;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.register button:hover {
+    background-color: rgb(185, 116, 13);
+}
+
+@media (max-width: 850px) {
+
+    .parchment {
+        width: 80svw;
+        padding: 70px;
+    }
+
+    .guild__table caption {
+        font-size: 1.5em;
+    }
+
+    .register {
+        gap: 10px
+    }
+    .register h2 {
+        margin-top: 10px;
+        font-size: 1.25rem;
+    }
+
+    .register input {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .register button {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .parchment {
+        width: 80svw;
+        padding: 50px;
+        background-size: contain;
+    }
+
+    .guild__table caption {
+        font-size: 1.2em;
+    }
+
+    .guild__table th {
+        font-size: 1rem;
+    }
+
+    .guild__table .signature {
+        font-size: 1.25rem;
+    }
+
+    .guild__table td {
+        font-size: 0.75rem;
+    }
+
+    .register {
+        gap: 10px
+    }
+    .register h2 {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    .register input {
+        width: 80%;
+        padding: 0;
+    }
+}
